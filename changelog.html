@@ -3,52 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- COPY: meta -->
-  <title>LangHUD changelog: what's new in each version</title>
+  <title>LangHUD changelog: what&#39;s new in each version</title>
   <meta name="description" content="Every LangHUD release, newest first: new features, fixes and changes to the macOS keyboard-language helper.">
-  <!-- /COPY: meta -->
-  <link rel="canonical" href="https://onemenny.github.io/LangHUD-site/changelog.html">
+  <meta name="langhud-languages" content="en,he">
+  <link rel="canonical" href="https://langhud.app/changelog.html">
+  <link rel="alternate" hreflang="en" href="https://langhud.app/changelog.html">
+  <link rel="alternate" hreflang="he" href="https://langhud.app/he/changelog.html">
+  <link rel="alternate" hreflang="x-default" href="https://langhud.app/changelog.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LangHUD">
-  <meta property="og:title" content="LangHUD changelog: what's new in each version">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:title" content="LangHUD changelog: what&#39;s new in each version">
   <meta property="og:description" content="Every LangHUD release, newest first: new features, fixes and changes to the macOS keyboard-language helper.">
-  <meta property="og:url" content="https://onemenny.github.io/LangHUD-site/changelog.html">
-  <meta property="og:image" content="https://onemenny.github.io/LangHUD-site/og-image.jpg">
+  <meta property="og:url" content="https://langhud.app/changelog.html">
+  <meta property="og:image" content="https://langhud.app/og-image.jpg">
   <meta property="og:image:alt" content="The LangHUD reminder showing English above a text field">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="LangHUD changelog: what's new in each version">
+  <meta name="twitter:title" content="LangHUD changelog: what&#39;s new in each version">
   <meta name="twitter:description" content="Every LangHUD release, newest first: new features, fixes and changes to the macOS keyboard-language helper.">
-  <meta name="twitter:image" content="https://onemenny.github.io/LangHUD-site/og-image.jpg">
+  <meta name="twitter:image" content="https://langhud.app/og-image.jpg">
   <meta name="twitter:image:alt" content="The LangHUD reminder showing English above a text field">
   <meta name="color-scheme" content="light dark">
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
+  <script src="site.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html"><img src="icon.png" alt="" width="28" height="28">LangHUD</a>
-      <nav class="site-nav" aria-label="Main">
-        <a class="optional" href="index.html#how-it-works">How it works</a>
-        <a class="optional" href="index.html#features">Features</a>
-        <a class="optional" href="index.html#faq">FAQ</a>
-        <a href="index.html#download">Download</a>
-        <a href="changelog.html" aria-current="page">Changelog</a>
-      </nav>
+      <div class="header-end">
+        <nav class="lang-menu" aria-label="Language">
+          <a href="changelog.html" hreflang="en" lang="en" dir="ltr" aria-current="true">English</a>
+          <a href="he/changelog.html" hreflang="he" lang="he" dir="rtl">עברית</a>
+        </nav>
+        <nav class="site-nav" aria-label="Main">
+          <a class="optional" href="index.html#how-it-works">How it works</a>
+          <a class="optional" href="index.html#features">Features</a>
+          <a class="optional" href="index.html#faq">FAQ</a>
+          <a class="optional" href="index.html#pricing">Pricing</a>
+          <a href="index.html#download">Download</a>
+          <a href="changelog.html" aria-current="page">Changelog</a>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main class="page" id="main">
     <div class="container narrow">
-      <!-- COPY: changelog-page -->
       <h1>Changelog</h1>
       <p class="page-lead">What changed in each version of LangHUD, newest first. <a href="index.html#download">Download the latest version.</a></p>
-      <!-- /COPY: changelog-page -->
-      <!-- Generated from CHANGELOG.md by Scripts/update-site.sh; edit CHANGELOG.md, not this block. -->
+      <!-- Release notes stay in English in every language. Generated from CHANGELOG.md by Scripts/update-site.sh; edit CHANGELOG.md, not this block. -->
+      <div class="release-list" lang="en" dir="ltr">
       <!-- changelog:start -->
     <p class="release-empty">No released versions yet.</p>
       <!-- changelog:end -->
+      </div>
     </div>
   </main>
 
@@ -62,6 +74,5 @@
       </nav>
     </div>
   </footer>
-  <script src="site.js" defer></script>
 </body>
 </html>

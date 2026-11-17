@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://onemenny.github.io/LangHUD-site/sitemap.xml
+Sitemap: https://langhud.app/sitemap.xml

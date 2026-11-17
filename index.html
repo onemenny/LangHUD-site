@@ -3,22 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- COPY: meta -->
   <title>LangHUD: fix wrong-keyboard text and hear your typing language on Mac</title>
   <meta name="description" content="LangHUD is a private macOS menu bar app for bilingual typing. It speaks the keyboard language as you type and fixes text typed in the wrong layout. Not a keylogger: nothing leaves your Mac.">
-  <!-- /COPY: meta -->
-  <link rel="canonical" href="https://onemenny.github.io/LangHUD-site/">
+  <meta name="langhud-languages" content="en,he">
+  <link rel="canonical" href="https://langhud.app/">
+  <link rel="alternate" hreflang="en" href="https://langhud.app/">
+  <link rel="alternate" hreflang="he" href="https://langhud.app/he/">
+  <link rel="alternate" hreflang="x-default" href="https://langhud.app/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LangHUD">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="he_IL">
   <meta property="og:title" content="LangHUD: fix wrong-keyboard text and hear your typing language on Mac">
   <meta property="og:description" content="LangHUD is a private macOS menu bar app for bilingual typing. It speaks the keyboard language as you type and fixes text typed in the wrong layout. Not a keylogger: nothing leaves your Mac.">
-  <meta property="og:url" content="https://onemenny.github.io/LangHUD-site/">
-  <meta property="og:image" content="https://onemenny.github.io/LangHUD-site/og-image.jpg">
+  <meta property="og:url" content="https://langhud.app/">
+  <meta property="og:image" content="https://langhud.app/og-image.jpg">
   <meta property="og:image:alt" content="The LangHUD reminder showing English above a text field">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="LangHUD: fix wrong-keyboard text and hear your typing language on Mac">
   <meta name="twitter:description" content="LangHUD is a private macOS menu bar app for bilingual typing. It speaks the keyboard language as you type and fixes text typed in the wrong layout. Not a keylogger: nothing leaves your Mac.">
-  <meta name="twitter:image" content="https://onemenny.github.io/LangHUD-site/og-image.jpg">
+  <meta name="twitter:image" content="https://langhud.app/og-image.jpg">
   <meta name="twitter:image:alt" content="The LangHUD reminder showing English above a text field">
   <meta name="color-scheme" content="light dark">
   <link rel="icon" href="icon.png">
@@ -29,27 +33,36 @@
     "@type": "SoftwareApplication",
     "name": "LangHUD",
     "description": "A macOS menu bar app that shows and speaks the active keyboard language as you type, and converts selected text typed in the wrong keyboard language. Text is read on your Mac and never sent anywhere.",
+    "inLanguage": "en",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "macOS 13 or later",
-    "url": "https://onemenny.github.io/LangHUD-site/",
+    "url": "https://langhud.app/",
     "downloadUrl": "https://github.com/onemenny/LangHUD-site/releases/latest/download/LangHUD.dmg",
-    "image": "https://onemenny.github.io/LangHUD-site/og-image.jpg",
+    "image": "https://langhud.app/og-image.jpg",
     "softwareVersion": "0.1.0"
   }
   </script>
+  <script src="site.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html"><img src="icon.png" alt="" width="28" height="28">LangHUD</a>
-      <nav class="site-nav" aria-label="Main">
-        <a class="optional" href="#how-it-works">How it works</a>
-        <a class="optional" href="#features">Features</a>
-        <a class="optional" href="#faq">FAQ</a>
-        <a href="#download">Download</a>
-        <a href="changelog.html">Changelog</a>
-      </nav>
+      <div class="header-end">
+        <nav class="lang-menu" aria-label="Language">
+          <a href="index.html" hreflang="en" lang="en" dir="ltr" aria-current="true">English</a>
+          <a href="he/index.html" hreflang="he" lang="he" dir="rtl">עברית</a>
+        </nav>
+        <nav class="site-nav" aria-label="Main">
+          <a class="optional" href="#how-it-works">How it works</a>
+          <a class="optional" href="#features">Features</a>
+          <a class="optional" href="#faq">FAQ</a>
+          <a class="optional" href="#pricing">Pricing</a>
+          <a href="#download">Download</a>
+          <a href="changelog.html">Changelog</a>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -57,33 +70,28 @@
     <section class="hero">
       <div class="container">
         <img class="hero-icon" src="icon.png" alt="LangHUD app icon" width="104" height="104">
-        <!-- COPY: hero -->
-        <h1>Type in the right language. <span class="gradient-text">Fix it when you don't.</span></h1>
-        <p class="lead">
-          LangHUD is a small menu bar app for people who type in more than one language. It tells you
-          which keyboard language is on as you start typing, and turns text typed in the wrong one into
-          what you meant, with one key press.
-        </p>
+        <h1>Type in the right language <span class="gradient-text">Fix it when you don&#39;t</span></h1>
+        <div class="hud-stage" aria-hidden="true">
+          <div class="hud-demo">
+            <div class="hud hud-face" data-cycle="en"><span class="badge" lang="en">EN</span><span>English</span></div>
+            <div class="hud hud-face" data-cycle="he"><span class="badge" lang="he">עב</span><span>Hebrew</span></div>
+          </div>
+          <div class="hud-field"><span class="hud-caret"></span><span class="hud-ghost"></span><span class="hud-ghost hud-ghost-short"></span></div>
+        </div>
+        <p class="lead">LangHUD is a small menu bar app for people who type in more than one language. It tells you which keyboard language is on as you start typing, and turns text typed in the wrong one into what you meant, with one key press.</p>
         <p class="hero-privacy">Private by design: your text is read on your Mac and never sent anywhere. Not a keylogger.</p>
-        <!-- /COPY: hero -->
         <div class="hero-actions">
           <a class="button button-primary" href="#download">Download for Mac</a>
           <a class="button button-secondary" href="#how-it-works">See how it works</a>
         </div>
-        <p class="hero-meta">Version <!-- version:start -->0.1.0<!-- version:end --> &middot; macOS 13 or later &middot; Apple silicon</p>
-
-        <div class="hud-demo" aria-hidden="true">
-          <div class="hud"><span class="badge">EN</span>English</div>
-          <div class="hud"><span class="badge" lang="he">&#1506;</span>Hebrew</div>
-        </div>
+        <p class="hero-meta">Version <!-- version:start -->0.1.0<!-- version:end --> &middot; macOS 13 or later &middot; Apple silicon or Intel</p>
       </div>
     </section>
 
     <section class="section section-alt reveal" id="how-it-works">
       <div class="container">
-        <!-- COPY: how-it-works -->
         <p class="eyebrow">How it works</p>
-        <h2>A quiet helper, right where you type.</h2>
+        <h2>A quiet helper, right where you type</h2>
         <p class="section-lead">LangHUD sits in the menu bar and speaks up only when it matters.</p>
         <ol class="grid steps">
           <li class="card">
@@ -102,34 +110,30 @@
             <p>Select the text and press the hot key. LangHUD converts it to the other layout and switches your keyboard to match.</p>
           </li>
         </ol>
-        <!-- /COPY: how-it-works -->
-        <!-- Demo video slot: save the recording as media/demo.mp4 (H.264, muted). Until it exists the poster image is shown. -->
+        <!-- Demo video slot: save the recording as static/media/demo.mp4 (H.264, muted). Until it exists the poster image is shown. -->
         <figure class="demo">
           <video muted autoplay loop playsinline preload="metadata" poster="media/demo-poster.svg" aria-label="LangHUD demo recording">
             <source src="media/demo.mp4" type="video/mp4">
           </video>
-          <!-- COPY: demo-caption -->
           <figcaption class="demo-caption">Demo recording on its way</figcaption>
-          <!-- /COPY: demo-caption -->
         </figure>
       </div>
     </section>
 
     <section class="section reveal" id="features">
       <div class="container">
-        <!-- COPY: features -->
         <p class="eyebrow">Features</p>
-        <h2>Two things LangHUD does best.</h2>
+        <h2>Two things LangHUD does best</h2>
         <div class="feature-pair">
           <article class="card feature-highlight">
             <h3>Fix text typed in the wrong layout</h3>
             <p>Typed a whole sentence in Hebrew letters when you meant English? Select it and press the hot key. LangHUD converts the selected text to the other keyboard layout and switches your keyboard, so you can keep typing. Press again to convert it back.</p>
-            <p class="feature-example"><span lang="he" dir="rtl">יקךךם &#39;םרךג</span> <span aria-hidden="true">&rarr;</span> <span>hello world</span></p>
+            <p class="feature-example" dir="ltr"><span lang="he" dir="rtl">יקךךם &#39;םרךג</span> <span aria-hidden="true">&rarr;</span> <span lang="en">hello world</span></p>
           </article>
           <article class="card feature-highlight">
             <h3>Hear which language you are typing in</h3>
-            <p>A short spoken cue says the keyboard language, for example "English" or "Hebrew", when you start typing, switch apps or come back after a pause. You know without looking, and can turn it off any time.</p>
-            <p class="feature-example"><span aria-hidden="true">&#128264;</span> "English"</p>
+            <p>A short spoken cue says the keyboard language, for example &quot;English&quot; or &quot;Hebrew&quot;, when you start typing, switch apps or come back after a pause. You know without looking, and can turn it off any time.</p>
+            <p class="feature-example"><span aria-hidden="true">&#128264;</span> &quot;English&quot;</p>
           </article>
         </div>
         <div class="grid feature-more">
@@ -139,20 +143,18 @@
           </article>
           <article class="card">
             <h3>Language in the menu bar</h3>
-            <p>The menu bar icon shows the current layout, such as EN or &#1506;, at a glance.</p>
+            <p>The menu bar icon shows the current layout, such as EN or ע, at a glance.</p>
           </article>
           <article class="card">
             <h3>Private, and not a keylogger</h3>
-            <p>Text is read on your Mac only and never sent anywhere. LangHUD has no network code and does not ask for Input Monitoring.</p>
+            <p>Text is read on your Mac only and never sent anywhere. Your typing, your text and the apps you use are never sent, and LangHUD does not ask for Input Monitoring.</p>
           </article>
         </div>
-        <!-- /COPY: features -->
       </div>
     </section>
 
     <section class="section section-alt reveal" id="faq">
       <div class="container narrow">
-        <!-- COPY: faq -->
         <p class="eyebrow">FAQ</p>
         <h2>Questions and answers</h2>
         <div class="faq-list">
@@ -162,7 +164,7 @@
           </details>
           <details>
             <summary><h3>Does my text leave my Mac?</h3></summary>
-            <p>Never. LangHUD contains no network code at all: no account, no analytics, no crash reports. Everything happens on your Mac.</p>
+            <p>Never. Your typing, your text and the apps you use are never sent: no account, no analytics, no crash reports. The only thing LangHUD sends is a license check (key, activation id, app version).</p>
           </details>
           <details>
             <summary><h3>Why does it need the Accessibility permission?</h3></summary>
@@ -170,7 +172,7 @@
           </details>
           <details>
             <summary><h3>How do I fix text typed in the wrong language?</h3></summary>
-            <p>Select the text, then press the hot key shown in LangHUD's Settings. The selection is converted to your other keyboard layout and the keyboard switches to match. Nothing selected means nothing changes.</p>
+            <p>Select the text, then press the hot key shown in LangHUD&#39;s Settings. The selection is converted to your other keyboard layout and the keyboard switches to match. Nothing selected means nothing changes.</p>
           </details>
           <details>
             <summary><h3>Can I turn the spoken cue off?</h3></summary>
@@ -182,37 +184,49 @@
           </details>
           <details>
             <summary><h3>Which Macs are supported?</h3></summary>
-            <p>Macs with Apple silicon running macOS 13 Ventura or later, with two or more keyboard languages turned on.</p>
+            <p>Any Mac, Apple silicon or Intel, running macOS 13 Ventura or later, with two or more keyboard languages turned on.</p>
+          </details>
+          <details>
+            <summary><h3>How much does it cost?</h3></summary>
+            <p>The HUD is free. There is a 14-day trial of the paid features (the spoken cue and text correction), then $10 one-time. One license covers up to 3 of your Macs, with free updates through 1.x.</p>
           </details>
         </div>
-        <!-- /COPY: faq -->
       </div>
     </section>
 
-    <section class="section reveal" id="download">
+    <section class="section reveal" id="pricing">
+      <div class="container narrow">
+        <p class="eyebrow">Pricing</p>
+        <h2>Free HUD</h2>
+        <div class="card pricing-card">
+          <p class="section-lead price-lead">The HUD is free, always. The spoken cue and text correction need a license after the 14-day trial: $10 one-time, one license for up to 3 of your Macs.</p>
+          <p class="section-lead">Free updates through 1.x. Try everything free for 14 days before you pay.</p>
+          <p class="button-row">
+            <a class="button button-soon" href="#buy-soon" id="buy-soon" aria-disabled="true">Buy <small>Coming soon</small></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal" id="download">
       <div class="container">
-        <!-- COPY: download-intro -->
         <p class="eyebrow">Download</p>
         <h2>Get LangHUD <!-- version:start -->0.1.0<!-- version:end --></h2>
-        <p class="section-lead">A disk image for Macs with Apple silicon running macOS 13 or later. LangHUD is also coming to the Mac App Store.</p>
-        <!-- /COPY: download-intro -->
+        <p class="section-lead">One disk image for Macs with Apple silicon or Intel, running macOS 13 Ventura or later. LangHUD is also coming to the Mac App Store.</p>
         <div class="button-row">
           <a class="button button-primary" href="https://github.com/onemenny/LangHUD-site/releases/latest/download/LangHUD.dmg">Download LangHUD.dmg</a>
           <!-- Mac App Store slot: replace with Apple's official badge and the listing link once LangHUD is on the App Store. -->
-              <span class="button button-store" role="link" aria-disabled="true" title="LangHUD is coming to the Mac App Store">Mac App Store <small>(not live yet)</small></span>
+          <span class="button button-store" role="link" aria-disabled="true" title="LangHUD is coming to the Mac App Store">Mac App Store <small>(not live yet)</small></span>
         </div>
         <div class="grid setup">
           <div class="note" id="install">
-            <!-- COPY: install -->
             <h3>1. Install</h3>
             <ol>
               <li>Open <strong>LangHUD.dmg</strong> from your Downloads folder.</li>
               <li>Drag <strong>LangHUD</strong> onto the <strong>Applications</strong> folder in the window that opens.</li>
             </ol>
-            <!-- /COPY: install -->
           </div>
           <div class="note" id="how-to-open">
-            <!-- COPY: how-to-open -->
             <h3>2. Open it the first time</h3>
             <ol>
               <li>Open LangHUD from Applications. macOS says it cannot verify the developer; close the message.</li>
@@ -220,32 +234,29 @@
               <li>Confirm with <strong>Open</strong> (you may be asked for your password).</li>
             </ol>
             <p>On older versions of macOS: right-click (or Control-click) LangHUD in Applications, choose <strong>Open</strong>, then <strong>Open</strong> again.</p>
-            <!-- /COPY: how-to-open -->
           </div>
           <div class="note" id="permissions">
-            <!-- COPY: permissions -->
             <h3>3. Turn on Accessibility</h3>
             <ol>
               <li>On first launch LangHUD explains why it needs Accessibility and offers to open System Settings.</li>
               <li>In <strong>System Settings &gt; Privacy &amp; Security &gt; Accessibility</strong>, turn on <strong>LangHUD</strong>.</li>
             </ol>
             <p>After installing an update, if LangHUD stops noticing your typing, turn its Accessibility switch off and on again.</p>
-            <!-- /COPY: permissions -->
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt reveal" id="changelog">
+    <section class="section reveal" id="changelog">
       <div class="container narrow">
-        <!-- COPY: changelog-intro -->
         <p class="eyebrow">Changelog</p>
-        <h2>What's new</h2>
-        <!-- /COPY: changelog-intro -->
-        <!-- Generated from CHANGELOG.md by Scripts/update-site.sh (newest release only); edit CHANGELOG.md, not this block. -->
+        <h2>What&#39;s new</h2>
+        <!-- Release notes stay in English in every language. Generated from CHANGELOG.md by Scripts/update-site.sh (newest release only); edit CHANGELOG.md, not this block. -->
+        <div class="release-list" lang="en" dir="ltr">
         <!-- changelog-latest:start -->
     <p class="release-empty">No released versions yet.</p>
         <!-- changelog-latest:end -->
+        </div>
         <p><a href="changelog.html">See every version in the full changelog</a></p>
       </div>
     </section>
@@ -261,6 +272,5 @@
       </nav>
     </div>
   </footer>
-  <script src="site.js" defer></script>
 </body>
 </html>
