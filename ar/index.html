@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LangHUD: صحّح النص المكتوب بتخطيط لوحة المفاتيح الخطأ واسمع لغة الكتابة على Mac</title>
+  <meta name="description" content="LangHUD تطبيق صغير وخاص في شريط القائمة في macOS لمن يكتب بلغتين. ينطق لغة لوحة المفاتيح عندما تبدأ الكتابة ويصحّح النص المكتوب بالتخطيط الخطأ. ليس برنامج تسجيل مفاتيح: لا شيء يغادر جهاز Mac.">
+  <meta name="langhud-languages" content="en,he,ru,ar">
+  <link rel="canonical" href="https://langhud.app/ar/">
+  <link rel="alternate" hreflang="en" href="https://langhud.app/">
+  <link rel="alternate" hreflang="he" href="https://langhud.app/he/">
+  <link rel="alternate" hreflang="ru" href="https://langhud.app/ru/">
+  <link rel="alternate" hreflang="ar" href="https://langhud.app/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://langhud.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LangHUD">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:title" content="LangHUD: صحّح النص المكتوب بتخطيط لوحة المفاتيح الخطأ واسمع لغة الكتابة على Mac">
+  <meta property="og:description" content="LangHUD تطبيق صغير وخاص في شريط القائمة في macOS لمن يكتب بلغتين. ينطق لغة لوحة المفاتيح عندما تبدأ الكتابة ويصحّح النص المكتوب بالتخطيط الخطأ. ليس برنامج تسجيل مفاتيح: لا شيء يغادر جهاز Mac.">
+  <meta property="og:url" content="https://langhud.app/ar/">
+  <meta property="og:image" content="https://langhud.app/og-image.jpg">
+  <meta property="og:image:alt" content="تذكير LangHUD يعرض English فوق حقل نص">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LangHUD: صحّح النص المكتوب بتخطيط لوحة المفاتيح الخطأ واسمع لغة الكتابة على Mac">
+  <meta name="twitter:description" content="LangHUD تطبيق صغير وخاص في شريط القائمة في macOS لمن يكتب بلغتين. ينطق لغة لوحة المفاتيح عندما تبدأ الكتابة ويصحّح النص المكتوب بالتخطيط الخطأ. ليس برنامج تسجيل مفاتيح: لا شيء يغادر جهاز Mac.">
+  <meta name="twitter:image" content="https://langhud.app/og-image.jpg">
+  <meta name="twitter:image:alt" content="تذكير LangHUD يعرض English فوق حقل نص">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="../icon.png">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "LangHUD",
+    "description": "تطبيق في شريط القائمة في macOS يعرض لغة لوحة المفاتيح الحالية وينطقها أثناء الكتابة، ويحوّل النص المحدد المكتوب بلغة لوحة المفاتيح الخطأ. يُقرأ النص على جهاز Mac ولا يُرسل إلى أي مكان.",
+    "inLanguage": "ar",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "macOS 13 أو أحدث",
+    "url": "https://langhud.app/ar/",
+    "downloadUrl": "https://github.com/onemenny/LangHUD-site/releases/latest/download/LangHUD.dmg",
+    "image": "https://langhud.app/og-image.jpg",
+    "softwareVersion": "0.1.0"
+  }
+  </script>
+  <script src="../site.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="../icon.png" alt="" width="28" height="28">LangHUD</a>
+      <div class="header-end">
+        <nav class="lang-menu" aria-label="اللغة">
+          <a href="../index.html" hreflang="en" lang="en" dir="ltr">English</a>
+          <a href="../he/index.html" hreflang="he" lang="he" dir="rtl">עברית</a>
+          <a href="../ru/index.html" hreflang="ru" lang="ru" dir="ltr">Русский</a>
+          <a href="index.html" hreflang="ar" lang="ar" dir="rtl" aria-current="true">العربية</a>
+        </nav>
+        <nav class="site-nav" aria-label="القائمة الرئيسية">
+          <a class="optional" href="#how-it-works">كيف يعمل</a>
+          <a class="optional" href="#features">الميزات</a>
+          <a class="optional" href="#faq">الأسئلة</a>
+          <a class="optional" href="#pricing">السعر</a>
+          <a href="#download">التنزيل</a>
+          <a href="changelog.html">ما الجديد</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <img class="hero-icon" src="../icon.png" alt="أيقونة تطبيق LangHUD" width="104" height="104">
+        <h1>اكتب باللغة الصحيحة <span class="gradient-text">وإن أخطأت، صحّحها</span></h1>
+        <div class="hud-stage" aria-hidden="true">
+          <div class="hud-demo">
+            <div class="hud hud-face" data-cycle="en"><span class="badge" lang="en">EN</span><span>الإنجليزية</span></div>
+            <div class="hud hud-face" data-cycle="he"><span class="badge" lang="he">עב</span><span>العبرية</span></div>
+          </div>
+          <div class="hud-field"><span class="hud-caret"></span><span class="hud-ghost"></span><span class="hud-ghost hud-ghost-short"></span></div>
+        </div>
+        <p class="lead">LangHUD تطبيق صغير في شريط القائمة لمن يكتب بأكثر من لغة. يخبرك بلغة لوحة المفاتيح المفعّلة عندما تبدأ الكتابة، ويحوّل النص المكتوب بالتخطيط الخطأ إلى ما قصدته، بضغطة مفتاح واحدة.</p>
+        <p class="hero-privacy">خاص من الأساس: يُقرأ نصك على جهاز Mac ولا يُرسل إلى أي مكان. ليس برنامج تسجيل مفاتيح.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#download">نزّل لجهاز Mac</a>
+          <a class="button button-secondary" href="#how-it-works">شاهد كيف يعمل</a>
+        </div>
+        <p class="hero-meta">الإصدار <!-- version:start -->0.1.0<!-- version:end --> &middot; macOS 13 أو أحدث &middot; Apple silicon أو Intel</p>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal" id="how-it-works">
+      <div class="container">
+        <p class="eyebrow">كيف يعمل</p>
+        <h2>مساعد هادئ، حيث تكتب تمامًا</h2>
+        <p class="section-lead">يجلس LangHUD في شريط القائمة ولا يتكلم إلا عند الحاجة.</p>
+        <ol class="grid steps">
+          <li class="card">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>ثبّته واسمح بإذن تسهيلات الاستخدام</h3>
+            <p>اسحب LangHUD إلى التطبيقات وفعّل له إذن تسهيلات الاستخدام (Accessibility)، ليرى حقل النص الذي تكتب فيه.</p>
+          </li>
+          <li class="card">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>ابدأ الكتابة</h3>
+            <p>عندما تنقر في حقل أو تنتقل بين التطبيقات أو تعود بعد توقف، ينطق LangHUD لغة لوحة المفاتيح ويعرضها في بطاقة صغيرة.</p>
+          </li>
+          <li class="card">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>كتبت بالتخطيط الخطأ؟ صحّحه</h3>
+            <p>حدّد النص واضغط مفتاح الاختصار. يحوّله LangHUD إلى التخطيط الآخر ويبدّل لوحة المفاتيح لتطابقه.</p>
+          </li>
+        </ol>
+        <!-- Demo video slot: save the recording as static/media/demo.mp4 (H.264, muted). Until it exists the poster image is shown. -->
+        <figure class="demo">
+          <video muted autoplay loop playsinline preload="metadata" poster="../media/demo-poster.svg" aria-label="تسجيل توضيحي لتطبيق LangHUD">
+            <source src="../media/demo.mp4" type="video/mp4">
+          </video>
+          <figcaption class="demo-caption">التسجيل التوضيحي قادم قريبًا</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section reveal" id="features">
+      <div class="container">
+        <p class="eyebrow">الميزات</p>
+        <h2>أفضل ما يقدمه LangHUD</h2>
+        <div class="feature-pair">
+          <article class="card feature-highlight">
+            <h3>تصحيح النص المكتوب بالتخطيط الخطأ</h3>
+            <p>كتبت جملة كاملة بحروف عبرية وأنت تقصد الإنجليزية؟ حدّدها واضغط مفتاح الاختصار. يحوّل LangHUD النص المحدد إلى تخطيط لوحة المفاتيح الآخر ويبدّل لوحة المفاتيح، فتتابع الكتابة. اضغط مرة أخرى لإرجاع النص كما كان.</p>
+            <p class="feature-example" dir="ltr"><span lang="he" dir="rtl">יקךךם &#39;םרךג</span> <span aria-hidden="true">&rarr;</span> <span lang="en">hello world</span></p>
+          </article>
+          <article class="card feature-highlight">
+            <h3>اسمع اللغة التي تكتب بها</h3>
+            <p>تنطق إشارة صوتية قصيرة لغة لوحة المفاتيح، مثل «الإنجليزية» أو «العبرية»، عندما تبدأ الكتابة أو تنتقل إلى تطبيق آخر أو تعود بعد توقف. تعرف اللغة دون أن تنظر، ويمكنك إيقافها متى شئت.</p>
+            <p class="feature-example"><span aria-hidden="true">&#128264;</span> «الإنجليزية»</p>
+          </article>
+        </div>
+        <div class="grid feature-more">
+          <article class="card">
+            <h3>تذكير على الشاشة</h3>
+            <p>بطاقة صغيرة تعرض اللغة عندما تبدأ الكتابة، ثم تختفي.</p>
+          </article>
+          <article class="card">
+            <h3>اللغة في شريط القائمة</h3>
+            <p>تعرض أيقونة شريط القائمة التخطيط الحالي، مثل EN أو ע، بنظرة واحدة.</p>
+          </article>
+          <article class="card">
+            <h3>خاص، وليس برنامج تسجيل مفاتيح</h3>
+            <p>يُقرأ النص على جهاز Mac فقط ولا يُرسل إلى أي مكان. لا تُرسل كتابتك ولا نصك ولا التطبيقات التي تستخدمها، ولا يطلب LangHUD إذن مراقبة الإدخال (Input Monitoring).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal" id="faq">
+      <div class="container narrow">
+        <p class="eyebrow">الأسئلة</p>
+        <h2>أسئلة وأجوبة</h2>
+        <div class="faq-list">
+          <details>
+            <summary><h3>هل LangHUD برنامج تسجيل مفاتيح؟</h3></summary>
+            <p>لا. لا يسجّل LangHUD ما تكتبه، ولا يطلب إذن مراقبة الإدخال الذي تحتاجه برامج تسجيل المفاتيح. ينظر إلى حقل النص الذي تعمل فيه فقط ليلاحظ أنك بدأت الكتابة وليحوّل النص الذي تحدده، ولا يحتفظ بشيء.</p>
+          </details>
+          <details>
+            <summary><h3>هل يغادر نصي جهاز Mac؟</h3></summary>
+            <p>أبدًا. لا تُرسل كتابتك ولا نصك ولا التطبيقات التي تستخدمها: لا حساب، ولا تحليلات، ولا تقارير أعطال. الشيء الوحيد الذي يرسله LangHUD هو فحص الترخيص (المفتاح، ومعرف التفعيل، وإصدار التطبيق).</p>
+          </details>
+          <details>
+            <summary><h3>لماذا يحتاج إلى إذن تسهيلات الاستخدام؟</h3></summary>
+            <p>لا يسمح macOS لتطبيق برؤية حقل النص الذي تكتب فيه واستبدال النص الذي حددته إلا عبر تسهيلات الاستخدام. يشرح LangHUD ذلك عند التشغيل الأول ويفتح لك الصفحة الصحيحة في إعدادات النظام. ومن دونه تبقى أيقونة شريط القائمة تعمل.</p>
+          </details>
+          <details>
+            <summary><h3>كيف أصحّح نصًا كتبته باللغة الخطأ؟</h3></summary>
+            <p>حدّد النص، ثم اضغط مفتاح الاختصار الظاهر في إعدادات LangHUD. يتحوّل التحديد إلى تخطيط لوحة المفاتيح الآخر وتتبدّل لوحة المفاتيح لتطابقه. إن لم تحدد شيئًا، لا يتغير شيء.</p>
+          </details>
+          <details>
+            <summary><h3>هل يمكنني إيقاف الإشارة الصوتية؟</h3></summary>
+            <p>نعم. للإشارة الصوتية والتذكير على الشاشة ومفتاح الاختصار مفتاح تشغيل خاص بكل منها في الإعدادات.</p>
+          </details>
+          <details>
+            <summary><h3>هل يعمل في كل التطبيقات؟</h3></summary>
+            <p>في معظمها، نعم. بعض التطبيقات ترسم نصها بطريقة لا يستطيع macOS وصفها للتطبيقات الأخرى، ويذكر LangHUD ما يعرفه منها في نافذة القيود المعروفة.</p>
+          </details>
+          <details>
+            <summary><h3>ما أجهزة Mac المدعومة؟</h3></summary>
+            <p>أي جهاز Mac، بمعالج Apple silicon أو Intel، يعمل بنظام macOS 13 Ventura أو أحدث، مع تفعيل لغتين أو أكثر للوحة المفاتيح.</p>
+          </details>
+          <details>
+            <summary><h3>كم يكلف؟</h3></summary>
+            <p>الـ HUD مجاني. هناك تجربة لمدة 14 يومًا للميزات المدفوعة (الإشارة الصوتية وتصحيح النص)، ثم $10 مرة واحدة. ترخيص واحد يغطي حتى 3 من أجهزة Mac الخاصة بك، مع تحديثات مجانية طوال الإصدار 1.x.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="pricing">
+      <div class="container narrow">
+        <p class="eyebrow">السعر</p>
+        <h2>الـ HUD مجاني</h2>
+        <div class="card pricing-card">
+          <p class="section-lead price-lead">الـ HUD مجاني، دائمًا. تحتاج الإشارة الصوتية وتصحيح النص إلى ترخيص بعد تجربة لمدة 14 يومًا: $10 مرة واحدة، وترخيص واحد يغطي حتى 3 من أجهزة Mac الخاصة بك.</p>
+          <p class="section-lead">تحديثات مجانية طوال الإصدار 1.x. جرّب كل شيء مجانًا لمدة 14 يومًا قبل أن تدفع.</p>
+          <p class="button-row">
+            <a class="button button-soon" href="#buy-soon" id="buy-soon" aria-disabled="true">شراء <small>قريبًا</small></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal" id="download">
+      <div class="container">
+        <p class="eyebrow">التنزيل</p>
+        <h2>احصل على LangHUD <!-- version:start -->0.1.0<!-- version:end --></h2>
+        <p class="section-lead">صورة قرص واحدة لأجهزة Mac بمعالج Apple silicon أو Intel، تعمل بنظام macOS 13 Ventura أو أحدث. LangHUD قادم أيضًا إلى Mac App Store.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="https://github.com/onemenny/LangHUD-site/releases/latest/download/LangHUD.dmg">نزّل LangHUD.dmg</a>
+          <!-- Mac App Store slot: replace with Apple's official badge and the listing link once LangHUD is on the App Store. -->
+          <span class="button button-store" role="link" aria-disabled="true" title="LangHUD قادم إلى Mac App Store">Mac App Store <small>(غير متاح بعد)</small></span>
+        </div>
+        <div class="grid setup">
+          <div class="note" id="install">
+            <h3>1. التثبيت</h3>
+            <ol>
+              <li>افتح <strong>LangHUD.dmg</strong> من مجلد التنزيلات.</li>
+              <li>اسحب <strong>LangHUD</strong> إلى مجلد <strong>التطبيقات</strong> في النافذة التي تفتح.</li>
+            </ol>
+          </div>
+          <div class="note" id="how-to-open">
+            <h3>2. افتحه أول مرة</h3>
+            <ol>
+              <li>افتح LangHUD من التطبيقات. يقول macOS إنه لا يستطيع التحقق من المطوّر؛ أغلق الرسالة.</li>
+              <li>افتح <strong>إعدادات النظام &gt; الخصوصية والأمن</strong>، ومرّر إلى الأسفل وانقر <strong>فتح على أي حال</strong> بجانب LangHUD.</li>
+              <li>أكّد بالنقر على <strong>فتح</strong> (قد تُطلب منك كلمة السر).</li>
+            </ol>
+            <p>في الإصدارات الأقدم من macOS: انقر بزر الماوس الأيمن (أو مع Control) على LangHUD في التطبيقات، واختر <strong>فتح</strong>، ثم <strong>فتح</strong> مرة أخرى.</p>
+          </div>
+          <div class="note" id="permissions">
+            <h3>3. فعّل تسهيلات الاستخدام</h3>
+            <ol>
+              <li>عند التشغيل الأول يشرح LangHUD لماذا يحتاج إلى تسهيلات الاستخدام ويعرض فتح إعدادات النظام.</li>
+              <li>في <strong>إعدادات النظام &gt; الخصوصية والأمن &gt; تسهيلات الاستخدام</strong>، فعّل <strong>LangHUD</strong>.</li>
+            </ol>
+            <p>بعد تثبيت تحديث، إذا توقف LangHUD عن ملاحظة كتابتك، أوقف مفتاح تسهيلات الاستخدام الخاص به ثم شغّله من جديد.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="changelog">
+      <div class="container narrow">
+        <p class="eyebrow">ما الجديد</p>
+        <h2>ما الجديد</h2>
+        <!-- Release notes stay in English in every language. Generated from CHANGELOG.md by Scripts/update-site.sh (newest release only); edit CHANGELOG.md, not this block. -->
+        <div class="release-list" lang="en" dir="ltr">
+        <!-- changelog-latest:start -->
+    <p class="release-empty">No released versions yet.</p>
+        <!-- changelog-latest:end -->
+        </div>
+        <p><a href="changelog.html">كل الإصدارات في سجل التغييرات الكامل</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; 2026 LangHUD</span>
+      <span>LangHUD by ENJENIUM</span>
+      <nav class="footer-links" aria-label="التذييل">
+        <a href="changelog.html">ما الجديد</a>
+        <a href="privacy.html">الخصوصية</a>
+        <a href="terms.html">الشروط</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

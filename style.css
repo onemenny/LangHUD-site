@@ -783,6 +783,16 @@ html[dir="rtl"] .eyebrow {
   font-size: 15px;
 }
 
+/* Arabic loses its joined letter forms in a monospaced font, so the spoken-cue example uses the body
+   font there; the language-tagged parts of the "Fix it" example stay monospaced. */
+.feature-example:lang(ar) {
+  font-family: inherit;
+}
+
+.feature-example:lang(ar) [lang] {
+  font-family: var(--mono);
+}
+
 .steps {
   list-style: none;
   margin: 0 0 44px;
@@ -1133,7 +1143,9 @@ html[dir="rtl"] .eyebrow {
 
 /* Small screens */
 
-@media (max-width: 900px) {
+/* Russian section names are long: hide the section links until the header has room for all of them
+   next to the four-language menu. */
+@media (max-width: 1080px) {
   .site-nav .optional {
     display: none;
   }
@@ -1184,13 +1196,39 @@ html[dir="rtl"] .eyebrow {
     padding-block: 10px;
   }
 
+  /* Two rows: the logo and the main links, then the language menu on its own row, so four
+     languages fit on a phone. */
+  .site-header .container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "brand nav" "languages languages";
+    align-items: center;
+    column-gap: 12px;
+    row-gap: 4px;
+  }
+
+  .brand {
+    grid-area: brand;
+  }
+
   .header-end {
-    gap: 12px;
+    display: contents;
+  }
+
+  .lang-menu {
+    grid-area: languages;
+    justify-self: start;
+    flex-wrap: wrap;
+    max-width: 100%;
   }
 
   .site-nav {
+    grid-area: nav;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     gap: 2px;
     font-size: 14px;
+    margin-inline-end: -10px;
   }
 
   .hero {
@@ -1213,35 +1251,6 @@ html[dir="rtl"] .eyebrow {
 
   .container {
     padding-inline: 20px;
-  }
-
-  .site-header .container {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "brand . languages" "nav nav nav";
-    align-items: center;
-    column-gap: 12px;
-    row-gap: 4px;
-  }
-
-  .brand {
-    grid-area: brand;
-  }
-
-  .header-end {
-    display: contents;
-  }
-
-  .lang-menu {
-    grid-area: languages;
-    justify-self: end;
-  }
-
-  .site-nav {
-    grid-area: nav;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-inline-start: -10px;
   }
 
   .hero-actions,

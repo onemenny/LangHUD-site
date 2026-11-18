@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LangHUD: исправляет текст не в той раскладке и называет язык ввода на Mac</title>
+  <meta name="description" content="LangHUD — приложение в строке меню macOS для тех, кто печатает на двух языках. Называет язык клавиатуры и исправляет текст, набранный не в той раскладке. Не кейлогер: всё остаётся на Mac.">
+  <meta name="langhud-languages" content="en,he,ru,ar">
+  <link rel="canonical" href="https://langhud.app/ru/">
+  <link rel="alternate" hreflang="en" href="https://langhud.app/">
+  <link rel="alternate" hreflang="he" href="https://langhud.app/he/">
+  <link rel="alternate" hreflang="ru" href="https://langhud.app/ru/">
+  <link rel="alternate" hreflang="ar" href="https://langhud.app/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://langhud.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LangHUD">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AR">
+  <meta property="og:title" content="LangHUD: исправляет текст не в той раскладке и называет язык ввода на Mac">
+  <meta property="og:description" content="LangHUD — приложение в строке меню macOS для тех, кто печатает на двух языках. Называет язык клавиатуры и исправляет текст, набранный не в той раскладке. Не кейлогер: всё остаётся на Mac.">
+  <meta property="og:url" content="https://langhud.app/ru/">
+  <meta property="og:image" content="https://langhud.app/og-image.jpg">
+  <meta property="og:image:alt" content="Подсказка LangHUD с надписью English над текстовым полем">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LangHUD: исправляет текст не в той раскладке и называет язык ввода на Mac">
+  <meta name="twitter:description" content="LangHUD — приложение в строке меню macOS для тех, кто печатает на двух языках. Называет язык клавиатуры и исправляет текст, набранный не в той раскладке. Не кейлогер: всё остаётся на Mac.">
+  <meta name="twitter:image" content="https://langhud.app/og-image.jpg">
+  <meta name="twitter:image:alt" content="Подсказка LangHUD с надписью English над текстовым полем">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="../icon.png">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "LangHUD",
+    "description": "Приложение в строке меню macOS: показывает и называет вслух язык клавиатуры, когда вы печатаете, и переводит выделенный текст, набранный не в той раскладке. Текст читается на Mac и никуда не отправляется.",
+    "inLanguage": "ru",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "macOS 13 или новее",
+    "url": "https://langhud.app/ru/",
+    "downloadUrl": "https://github.com/onemenny/LangHUD-site/releases/latest/download/LangHUD.dmg",
+    "image": "https://langhud.app/og-image.jpg",
+    "softwareVersion": "0.1.0"
+  }
+  </script>
+  <script src="../site.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="../icon.png" alt="" width="28" height="28">LangHUD</a>
+      <div class="header-end">
+        <nav class="lang-menu" aria-label="Язык">
+          <a href="../index.html" hreflang="en" lang="en" dir="ltr">English</a>
+          <a href="../he/index.html" hreflang="he" lang="he" dir="rtl">עברית</a>
+          <a href="index.html" hreflang="ru" lang="ru" dir="ltr" aria-current="true">Русский</a>
+          <a href="../ar/index.html" hreflang="ar" lang="ar" dir="rtl">العربية</a>
+        </nav>
+        <nav class="site-nav" aria-label="Главное меню">
+          <a class="optional" href="#how-it-works">Как это работает</a>
+          <a class="optional" href="#features">Возможности</a>
+          <a class="optional" href="#faq">Вопросы</a>
+          <a class="optional" href="#pricing">Цена</a>
+          <a href="#download">Скачать</a>
+          <a href="changelog.html">Что нового</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <img class="hero-icon" src="../icon.png" alt="Значок приложения LangHUD" width="104" height="104">
+        <h1>Печатайте на нужном языке <span class="gradient-text">А если нет, исправьте</span></h1>
+        <div class="hud-stage" aria-hidden="true">
+          <div class="hud-demo">
+            <div class="hud hud-face" data-cycle="en"><span class="badge" lang="en">EN</span><span>Английский</span></div>
+            <div class="hud hud-face" data-cycle="he"><span class="badge" lang="he">עב</span><span>Иврит</span></div>
+          </div>
+          <div class="hud-field"><span class="hud-caret"></span><span class="hud-ghost"></span><span class="hud-ghost hud-ghost-short"></span></div>
+        </div>
+        <p class="lead">LangHUD — небольшое приложение в строке меню для тех, кто печатает на нескольких языках. Оно сообщает, какой язык клавиатуры включён, когда вы начинаете печатать, и одним нажатием превращает текст, набранный не в той раскладке, в то, что вы хотели написать.</p>
+        <p class="hero-privacy">Конфиденциально по замыслу: текст читается на вашем Mac и никуда не отправляется. Это не кейлогер.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#download">Скачать для Mac</a>
+          <a class="button button-secondary" href="#how-it-works">Как это работает</a>
+        </div>
+        <p class="hero-meta">Версия <!-- version:start -->0.1.0<!-- version:end --> &middot; macOS 13 или новее &middot; Apple silicon или Intel</p>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal" id="how-it-works">
+      <div class="container">
+        <p class="eyebrow">Как это работает</p>
+        <h2>Тихий помощник прямо там, где вы печатаете</h2>
+        <p class="section-lead">LangHUD живёт в строке меню и подаёт голос, только когда это нужно.</p>
+        <ol class="grid steps">
+          <li class="card">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Установите и разрешите Универсальный доступ</h3>
+            <p>Перетащите LangHUD в Программы и включите для него Универсальный доступ (Accessibility): так он видит поле, в котором вы печатаете.</p>
+          </li>
+          <li class="card">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Начните печатать</h3>
+            <p>Когда вы щёлкаете в поле, переключаетесь между приложениями или возвращаетесь после паузы, LangHUD называет язык клавиатуры вслух и показывает его в небольшой карточке.</p>
+          </li>
+          <li class="card">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>Набрали не в той раскладке? Исправьте</h3>
+            <p>Выделите текст и нажмите сочетание клавиш. LangHUD переведёт его в другую раскладку и переключит клавиатуру.</p>
+          </li>
+        </ol>
+        <!-- Demo video slot: save the recording as static/media/demo.mp4 (H.264, muted). Until it exists the poster image is shown. -->
+        <figure class="demo">
+          <video muted autoplay loop playsinline preload="metadata" poster="../media/demo-poster.svg" aria-label="Демонстрация LangHUD">
+            <source src="../media/demo.mp4" type="video/mp4">
+          </video>
+          <figcaption class="demo-caption">Видео скоро появится</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section reveal" id="features">
+      <div class="container">
+        <p class="eyebrow">Возможности</p>
+        <h2>Две вещи, которые LangHUD делает лучше всего</h2>
+        <div class="feature-pair">
+          <article class="card feature-highlight">
+            <h3>Исправление текста, набранного не в той раскладке</h3>
+            <p>Напечатали целое предложение ивритскими буквами, хотя хотели по-английски? Выделите его и нажмите сочетание клавиш. LangHUD переведёт выделенный текст в другую раскладку и переключит клавиатуру, чтобы вы могли печатать дальше. Нажмите ещё раз, чтобы отменить перевод.</p>
+            <p class="feature-example" dir="ltr"><span lang="he" dir="rtl">יקךךם &#39;םרךג</span> <span aria-hidden="true">&rarr;</span> <span lang="en">hello world</span></p>
+          </article>
+          <article class="card feature-highlight">
+            <h3>Слышите, на каком языке печатаете</h3>
+            <p>Короткая голосовая подсказка называет язык клавиатуры, например «Английский» или «Иврит», когда вы начинаете печатать, переключаете приложение или возвращаетесь после паузы. Вы знаете язык, не глядя, и можете выключить подсказку в любой момент.</p>
+            <p class="feature-example"><span aria-hidden="true">&#128264;</span> «Английский»</p>
+          </article>
+        </div>
+        <div class="grid feature-more">
+          <article class="card">
+            <h3>Подсказка на экране</h3>
+            <p>Небольшая карточка показывает язык, когда вы начинаете печатать, и затем исчезает.</p>
+          </article>
+          <article class="card">
+            <h3>Язык в строке меню</h3>
+            <p>Значок в строке меню сразу показывает текущую раскладку, например EN или ע.</p>
+          </article>
+          <article class="card">
+            <h3>Конфиденциально, и это не кейлогер</h3>
+            <p>Текст читается только на вашем Mac и никуда не отправляется. Ваш ввод, ваш текст и приложения, которыми вы пользуетесь, не отправляются, а LangHUD не просит разрешения на мониторинг ввода (Input Monitoring).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal" id="faq">
+      <div class="container narrow">
+        <p class="eyebrow">Вопросы</p>
+        <h2>Вопросы и ответы</h2>
+        <div class="faq-list">
+          <details>
+            <summary><h3>LangHUD — это кейлогер?</h3></summary>
+            <p>Нет. LangHUD не записывает, что вы печатаете, и не просит разрешения на мониторинг ввода, которое нужно кейлогерам. Он смотрит на поле, в котором вы работаете, только чтобы заметить, что вы начали печатать, и чтобы перевести выделенный текст, и ничего не хранит.</p>
+          </details>
+          <details>
+            <summary><h3>Мой текст покидает Mac?</h3></summary>
+            <p>Никогда. Ваш ввод, ваш текст и приложения, которыми вы пользуетесь, не отправляются: нет учётной записи, аналитики и отчётов о сбоях. LangHUD отправляет только проверку лицензии (ключ, идентификатор активации, версия приложения).</p>
+          </details>
+          <details>
+            <summary><h3>Зачем ему Универсальный доступ?</h3></summary>
+            <p>macOS позволяет приложению видеть, в каком поле вы печатаете, и заменять выделенный текст только через Универсальный доступ. LangHUD объясняет это при первом запуске и сам открывает нужный раздел Системных настроек. Без этого разрешения значок в строке меню всё равно работает.</p>
+          </details>
+          <details>
+            <summary><h3>Как исправить текст, набранный не на том языке?</h3></summary>
+            <p>Выделите текст и нажмите сочетание клавиш, указанное в настройках LangHUD. Выделенное переводится в другую раскладку, и клавиатура переключается. Если ничего не выделено, ничего не меняется.</p>
+          </details>
+          <details>
+            <summary><h3>Можно выключить голосовую подсказку?</h3></summary>
+            <p>Да. У голосовой подсказки, подсказки на экране и сочетания клавиш есть свои переключатели в настройках.</p>
+          </details>
+          <details>
+            <summary><h3>Работает ли он во всех приложениях?</h3></summary>
+            <p>В большинстве да. Некоторые приложения рисуют текст сами, и macOS не может описать его другим приложениям. LangHUD перечисляет известные ему случаи в окне известных ограничений.</p>
+          </details>
+          <details>
+            <summary><h3>Какие Mac поддерживаются?</h3></summary>
+            <p>Любой Mac, Apple silicon или Intel, с macOS 13 Ventura или новее и как минимум двумя включёнными языками клавиатуры.</p>
+          </details>
+          <details>
+            <summary><h3>Сколько это стоит?</h3></summary>
+            <p>HUD бесплатный. Платные функции (голосовая подсказка и исправление текста) можно пробовать 14 дней, затем $10 один раз. Одна лицензия покрывает до 3 ваших Mac, с бесплатными обновлениями всей версии 1.x.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="pricing">
+      <div class="container narrow">
+        <p class="eyebrow">Цена</p>
+        <h2>HUD бесплатно</h2>
+        <div class="card pricing-card">
+          <p class="section-lead price-lead">HUD бесплатный, всегда. Для голосовой подсказки и исправления текста нужна лицензия после 14-дневного пробного периода: $10 один раз, одна лицензия покрывает до 3 ваших Mac.</p>
+          <p class="section-lead">Бесплатные обновления всей версии 1.x. Попробуйте всё бесплатно 14 дней, прежде чем платить.</p>
+          <p class="button-row">
+            <a class="button button-soon" href="#buy-soon" id="buy-soon" aria-disabled="true">Купить <small>Скоро</small></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal" id="download">
+      <div class="container">
+        <p class="eyebrow">Скачать</p>
+        <h2>Скачать LangHUD <!-- version:start -->0.1.0<!-- version:end --></h2>
+        <p class="section-lead">Один образ диска для Mac с Apple silicon или Intel и macOS 13 Ventura или новее. LangHUD скоро появится и в Mac App Store.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="https://github.com/onemenny/LangHUD-site/releases/latest/download/LangHUD.dmg">Скачать LangHUD.dmg</a>
+          <!-- Mac App Store slot: replace with Apple's official badge and the listing link once LangHUD is on the App Store. -->
+          <span class="button button-store" role="link" aria-disabled="true" title="LangHUD скоро появится в Mac App Store">Mac App Store <small>(пока недоступно)</small></span>
+        </div>
+        <div class="grid setup">
+          <div class="note" id="install">
+            <h3>1. Установка</h3>
+            <ol>
+              <li>Откройте <strong>LangHUD.dmg</strong> из папки «Загрузки».</li>
+              <li>Перетащите <strong>LangHUD</strong> на папку <strong>Программы</strong> в открывшемся окне.</li>
+            </ol>
+          </div>
+          <div class="note" id="how-to-open">
+            <h3>2. Первый запуск</h3>
+            <ol>
+              <li>Откройте LangHUD из папки «Программы». macOS сообщит, что не может проверить разработчика; закройте сообщение.</li>
+              <li>Откройте <strong>Системные настройки &gt; Конфиденциальность и безопасность</strong>, прокрутите вниз и нажмите <strong>Всё равно открыть</strong> рядом с LangHUD.</li>
+              <li>Подтвердите кнопкой <strong>Открыть</strong> (может понадобиться пароль).</li>
+            </ol>
+            <p>В старых версиях macOS: щёлкните LangHUD в папке «Программы» правой кнопкой (или с нажатой Control), выберите <strong>Открыть</strong>, затем ещё раз <strong>Открыть</strong>.</p>
+          </div>
+          <div class="note" id="permissions">
+            <h3>3. Включите Универсальный доступ</h3>
+            <ol>
+              <li>При первом запуске LangHUD объясняет, зачем ему Универсальный доступ, и предлагает открыть Системные настройки.</li>
+              <li>В <strong>Системные настройки &gt; Конфиденциальность и безопасность &gt; Универсальный доступ</strong> включите <strong>LangHUD</strong>.</li>
+            </ol>
+            <p>Если после обновления LangHUD перестал замечать ввод, выключите и снова включите его переключатель Универсального доступа.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="changelog">
+      <div class="container narrow">
+        <p class="eyebrow">Что нового</p>
+        <h2>Что нового</h2>
+        <!-- Release notes stay in English in every language. Generated from CHANGELOG.md by Scripts/update-site.sh (newest release only); edit CHANGELOG.md, not this block. -->
+        <div class="release-list" lang="en" dir="ltr">
+        <!-- changelog-latest:start -->
+    <p class="release-empty">No released versions yet.</p>
+        <!-- changelog-latest:end -->
+        </div>
+        <p><a href="changelog.html">Все версии в полном списке изменений</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; 2026 LangHUD</span>
+      <span>LangHUD by ENJENIUM</span>
+      <nav class="footer-links" aria-label="Нижнее меню">
+        <a href="changelog.html">Что нового</a>
+        <a href="privacy.html">Конфиденциальность</a>
+        <a href="terms.html">Условия</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

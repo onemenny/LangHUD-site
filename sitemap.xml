@@ -8,6 +8,8 @@
     <loc>https://langhud.app/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/"/>
     <lastmod>2026-10-25</lastmod>
   </url>
@@ -16,6 +18,28 @@
     <loc>https://langhud.app/he/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/"/>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <!-- release-lastmod -->
+  <url>
+    <loc>https://langhud.app/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/"/>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <!-- release-lastmod -->
+  <url>
+    <loc>https://langhud.app/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/"/>
     <lastmod>2026-10-25</lastmod>
   </url>
@@ -24,6 +48,8 @@
     <loc>https://langhud.app/changelog.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/changelog.html"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/changelog.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/changelog.html"/>
     <lastmod>2026-10-25</lastmod>
   </url>
@@ -32,6 +58,28 @@
     <loc>https://langhud.app/he/changelog.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/changelog.html"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/changelog.html"/>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <!-- release-lastmod -->
+  <url>
+    <loc>https://langhud.app/ru/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/changelog.html"/>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <!-- release-lastmod -->
+  <url>
+    <loc>https://langhud.app/ar/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/changelog.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/changelog.html"/>
     <lastmod>2026-10-25</lastmod>
   </url>
@@ -39,6 +87,8 @@
     <loc>https://langhud.app/privacy.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/privacy.html"/>
     <lastmod>2026-10-25</lastmod>
   </url>
@@ -46,6 +96,26 @@
     <loc>https://langhud.app/he/privacy.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/privacy.html"/>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://langhud.app/ru/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/privacy.html"/>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://langhud.app/ar/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/privacy.html"/>
     <lastmod>2026-10-25</lastmod>
   </url>
@@ -53,6 +123,8 @@
     <loc>https://langhud.app/terms.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/terms.html"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/terms.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/terms.html"/>
     <lastmod>2026-10-25</lastmod>
   </url>
@@ -60,6 +132,26 @@
     <loc>https://langhud.app/he/terms.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/terms.html"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/terms.html"/>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://langhud.app/ru/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/terms.html"/>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://langhud.app/ar/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://langhud.app/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://langhud.app/he/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://langhud.app/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://langhud.app/ar/terms.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://langhud.app/terms.html"/>
     <lastmod>2026-10-25</lastmod>
   </url>
