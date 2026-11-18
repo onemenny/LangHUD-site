@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>LangHUD</title>
+    <description>LangHUD updates</description>
+    <language>en</language>
+    <item>
+      <title>LangHUD 0.1.0</title>
+      <pubDate>Wed, 18 Nov 2026 10:23:53 +0000</pubDate>
+      <sparkle:version>324</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description sparkle:format="markdown"><![CDATA[
+### Added
+
+- A small on-screen reminder shows which keyboard language you are typing in when you start typing
+  in a text field, switch apps, or come back to typing after a pause.
+- An optional spoken cue says the language name, for example "English" or "Hebrew".
+- The menu bar icon shows the current keyboard language.
+- Fix the last typed text: select text that was typed in the wrong keyboard language and press the
+  hot key to convert it to the other language and switch the keyboard to match.
+- Settings for the reminder, the spoken cue, the hot key and starting at login.
+- A Known Limitations window that lists apps where LangHUD cannot see typing.
+- A 14-day free trial from the first launch. After it the spoken cue and text correction need a
+  license; the on-screen reminder stays free. Reinstalling the app does not restart the trial.
+- LangHUD can now check for updates and offer them (never forced). A new version shows in the
+  menu bar icon's menu; "Check for Updates…" is there too.
+]]></description>
+      <enclosure url="https://github.com/onemenny/LangHUD-site/releases/download/v0.1.0/LangHUD.dmg" length="3940661" type="application/octet-stream" sparkle:edSignature="yv0hBkmAmCkkN4HVKkJHYT5PGe06EJmfoE139QdpGadHx2xw3zPcXmkDeJp3Ujoq6rAhrQXqlScn29BdwiRiAA=="/>
+    </item>
+  </channel>
+</rss>
