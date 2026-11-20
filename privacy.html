@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LangHUD privacy: your text never leaves your Mac</title>
-  <meta name="description" content="LangHUD reads text locally to help you type in the right language and keeps nothing. Your text is never sent; only a license check is. No analytics, no Input Monitoring.">
+  <meta name="description" content="LangHUD reads text on your Mac and keeps nothing. Your text is never sent: only license and update checks, and feedback when you press Send. No analytics, no Input Monitoring.">
   <meta name="langhud-languages" content="en,he,ru,ar">
   <link rel="canonical" href="https://langhud.app/privacy.html">
   <link rel="alternate" hreflang="en" href="https://langhud.app/privacy.html">
@@ -19,13 +19,13 @@
   <meta property="og:locale:alternate" content="ru_RU">
   <meta property="og:locale:alternate" content="ar_AR">
   <meta property="og:title" content="LangHUD privacy: your text never leaves your Mac">
-  <meta property="og:description" content="LangHUD reads text locally to help you type in the right language and keeps nothing. Your text is never sent; only a license check is. No analytics, no Input Monitoring.">
+  <meta property="og:description" content="LangHUD reads text on your Mac and keeps nothing. Your text is never sent: only license and update checks, and feedback when you press Send. No analytics, no Input Monitoring.">
   <meta property="og:url" content="https://langhud.app/privacy.html">
   <meta property="og:image" content="https://langhud.app/og-image.jpg">
   <meta property="og:image:alt" content="The LangHUD reminder showing English above a text field">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="LangHUD privacy: your text never leaves your Mac">
-  <meta name="twitter:description" content="LangHUD reads text locally to help you type in the right language and keeps nothing. Your text is never sent; only a license check is. No analytics, no Input Monitoring.">
+  <meta name="twitter:description" content="LangHUD reads text on your Mac and keeps nothing. Your text is never sent: only license and update checks, and feedback when you press Send. No analytics, no Input Monitoring.">
   <meta name="twitter:image" content="https://langhud.app/og-image.jpg">
   <meta name="twitter:image:alt" content="The LangHUD reminder showing English above a text field">
   <meta name="color-scheme" content="light dark">
@@ -61,7 +61,7 @@
     <div class="container narrow">
       <p class="placeholder-banner"><strong>Placeholder.</strong> This page is a draft outline, not final legal text.</p>
       <h1>Privacy</h1>
-      <p class="page-lead">Short version: LangHUD does not collect, keep or send anything you type. The only thing it sends is a license check.</p>
+      <p class="page-lead">Short version: LangHUD does not collect, keep or send anything you type. It sends a license check, asks langhud.app for the update list, and sends a feedback report only when you write one and press Send.</p>
       <h2>What LangHUD reads</h2>
       <p>With your permission (macOS Accessibility), LangHUD reads the text field you are typing in, on your Mac, to notice when you start typing and to convert text you select. The text is used at that moment and then forgotten.</p>
       <h2>What LangHUD does not do</h2>
@@ -69,9 +69,11 @@
       <h2>What LangHUD stores</h2>
       <p>Only your LangHUD settings, kept on your Mac by macOS. No typed text, no history.</p>
       <h2>What LangHUD sends</h2>
-      <p>Only a license check. When you activate a license, and when LangHUD re-checks it, the app sends exactly three things to Polar, the license provider:</p>
+      <p>License check: when you activate a license, and when LangHUD re-checks it, the app sends exactly three things to Polar, the license provider:</p>
       <ul><li>the license key;</li><li>the activation id for this Mac;</li><li>the app version.</li></ul>
-      <p>Nothing else is sent. No text, no keystrokes, no list of the apps you use, no analytics and no crash reports.</p>
+      <p>Update check: LangHUD asks langhud.app for the update list, about once a day. It sends nothing about you or your text.</p>
+      <p>Feedback, only when you send it: when you choose Send Feedback and press Send, LangHUD sends the message you wrote, the email if you gave one, and only the diagnostic items you left ticked, to our feedback service (feedback.langhud.app), which files them as a private issue. Nothing is sent unless you press Send. The feedback service sees your internet address, as any website does, and keeps only a salted hash of it for at most 24 hours to limit spam; the address itself is never stored.</p>
+      <p>Nothing else is sent. No text other than a feedback message you write, no keystrokes, no list of the apps you use, no analytics and no crash reports.</p>
       <h2>This website</h2>
       <p>This site uses no cookies, no tracking and no third-party scripts or fonts. It is hosted on GitHub Pages and downloads come from GitHub, which may keep its own server logs. If you pick a language, that choice is saved in this browser only. The Buy button opens Polar&#39;s checkout, where Polar handles the payment; LangHUD never sees your card details.</p>
       <h2>Contact</h2>
