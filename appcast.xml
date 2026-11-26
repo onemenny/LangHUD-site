@@ -5,6 +5,23 @@
     <description>LangHUD updates</description>
     <language>en</language>
     <item>
+      <title>LangHUD 0.2.1</title>
+      <pubDate>Thu, 26 Nov 2026 12:52:22 +0000</pubDate>
+      <sparkle:version>488</sparkle:version>
+      <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description sparkle:format="markdown"><![CDATA[
+### Added
+
+- Click in a text box and the HUD shows your current keyboard language (optional, in Settings).
+
+### Fixed
+
+- The Settings window is no longer cut off at the sides on some Macs.
+]]></description>
+      <enclosure url="https://github.com/onemenny/LangHUD-site/releases/download/v0.2.1/LangHUD.dmg" length="5405708" type="application/octet-stream" sparkle:edSignature="q1XB4/xrcyU1PuabwVsT7qA/YM6ujS8BsK5aXGUcmzh8HlIQWgq1X1XtoWMmqIL4Gm+kkCAmdm9sqW/B/WwOAQ=="/>
+    </item>
+    <item>
       <title>LangHUD 0.2.0</title>
       <pubDate>Thu, 26 Nov 2026 07:37:33 +0000</pubDate>
       <sparkle:version>485</sparkle:version>
