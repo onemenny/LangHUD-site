@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LangHUD privacy: your text never leaves your Mac</title>
-  <meta name="description" content="LangHUD reads text on your Mac and keeps nothing. Your text is never sent: only license and update checks, and feedback when you press Send. No analytics, no Input Monitoring.">
+  <meta name="description" content="LangHUD reads text and keys on your Mac and keeps nothing you type but your never-fix words. It sends only license and update checks, and feedback when you press Send. No analytics.">
   <meta name="langhud-languages" content="en,he,ru,ar">
   <link rel="canonical" href="https://langhud.app/privacy.html">
   <link rel="alternate" hreflang="en" href="https://langhud.app/privacy.html">
@@ -19,13 +19,13 @@
   <meta property="og:locale:alternate" content="ru_RU">
   <meta property="og:locale:alternate" content="ar_AR">
   <meta property="og:title" content="LangHUD privacy: your text never leaves your Mac">
-  <meta property="og:description" content="LangHUD reads text on your Mac and keeps nothing. Your text is never sent: only license and update checks, and feedback when you press Send. No analytics, no Input Monitoring.">
+  <meta property="og:description" content="LangHUD reads text and keys on your Mac and keeps nothing you type but your never-fix words. It sends only license and update checks, and feedback when you press Send. No analytics.">
   <meta property="og:url" content="https://langhud.app/privacy.html">
   <meta property="og:image" content="https://langhud.app/og-image.jpg">
   <meta property="og:image:alt" content="The LangHUD reminder showing English above a text field">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="LangHUD privacy: your text never leaves your Mac">
-  <meta name="twitter:description" content="LangHUD reads text on your Mac and keeps nothing. Your text is never sent: only license and update checks, and feedback when you press Send. No analytics, no Input Monitoring.">
+  <meta name="twitter:description" content="LangHUD reads text and keys on your Mac and keeps nothing you type but your never-fix words. It sends only license and update checks, and feedback when you press Send. No analytics.">
   <meta name="twitter:image" content="https://langhud.app/og-image.jpg">
   <meta name="twitter:image:alt" content="The LangHUD reminder showing English above a text field">
   <meta name="color-scheme" content="light dark">
@@ -61,16 +61,20 @@
     <div class="container narrow">
       <p class="placeholder-banner"><strong>Placeholder.</strong> This page is a draft outline, not final legal text.</p>
       <h1>Privacy</h1>
-      <p class="page-lead">Short version: LangHUD does not collect, keep or send anything you type. It sends a license check, asks langhud.app for the update list, and sends a feedback report only when you write one and press Send.</p>
+      <p class="page-lead">Short version: LangHUD does not collect or send anything you type, and keeps none of it, except the words you put on auto-correct&#39;s never-fix list. It sends a license check, asks langhud.app for the update list, and sends a feedback report only when you write one and press Send.</p>
       <h2>What LangHUD reads</h2>
-      <p>With your permission (macOS Accessibility), LangHUD reads the text field you are typing in, on your Mac, to notice when you start typing and to convert text you select. The text is used at that moment and then forgotten.</p>
+      <p>With your permission (macOS Accessibility), LangHUD reads the text field you are typing in, on your Mac, to notice when you start typing and to convert text you select, or, with nothing selected, the line you just typed. The text is used at that moment and then forgotten.</p>
+      <p>While auto-correct is on, LangHUD also sees the keys you type, with the same Accessibility permission, to notice a word typed in the wrong keyboard layout and fix it. It holds the word you are typing and the few words just before it in memory, so that short words such as &quot;I&quot; can be fixed together with the next word; it forgets them at a click, a new line, a fix or after 30 seconds. After a fix, the words it replaced stay in memory for up to a minute, so the shortcut can undo it. A word you undo is also kept in memory while auto-correct is on: it is not fixed again until you leave that field, and if you undo it a second time it goes on the never-fix list. Pausing or turning off auto-correct, or quitting LangHUD, drops it. None of it is ever saved, logged or sent, except the never-fix list below. It sees nothing while a password field is active or macOS secure input is on, and nothing at all while auto-correct is off or paused.</p>
+      <p>In Pages, Keynote and Numbers, which tell other apps nothing about typing, LangHUD reads the Mac&#39;s running count of key presses to notice that you started typing. It never learns which key, it does not read the count while macOS secure input is on, and it ignores key presses while a password field is active.</p>
+      <p>LangHUD also reads one Control Center setting that says whether Do Not Disturb or another Focus is on, so it can stay silent then. It is a yes or no only, needs no permission, and is never stored or sent.</p>
       <h2>What LangHUD does not do</h2>
-      <p>It is not a keylogger: it does not record keystrokes and does not ask for the Input Monitoring permission.</p>
+      <p>It is not a keylogger: nothing you type is recorded, saved or sent, and it does not ask for the Input Monitoring permission.</p>
       <h2>What LangHUD stores</h2>
       <p>Only your LangHUD settings, kept on your Mac by macOS. No typed text, no history.</p>
+      <p>One list you control: auto-correct&#39;s never-fix words. When you undo the same word twice, that word is added so it is never fixed again. The list is kept on your Mac, shown in Settings &gt; Auto-correct, and you can remove any word or clear it.</p>
+      <p>LangHUD also counts how many times you have used the shortcut. It is a number only, kept on your Mac, and never sent anywhere.</p>
       <h2>What LangHUD sends</h2>
-      <p>License check: when you activate a license, and when LangHUD re-checks it, the app sends exactly three things to Polar, the license provider:</p>
-      <ul><li>the license key;</li><li>the activation id for this Mac;</li><li>the app version.</li></ul>
+      <p>License check: when you activate a license, and when LangHUD re-checks it, the app sends general license information to Polar, the license provider. Nothing you type is included.</p>
       <p>Update check: LangHUD asks langhud.app for the update list, about once a day. It sends nothing about you or your text.</p>
       <p>Feedback, only when you send it: when you choose Send Feedback and press Send, LangHUD sends the message you wrote, the email if you gave one, and only the diagnostic items you left ticked, to our feedback service (feedback.langhud.app), which files them as a private issue. Nothing is sent unless you press Send. The feedback service sees your internet address, as any website does, and keeps only a salted hash of it for at most 24 hours to limit spam; the address itself is never stored.</p>
       <p>Nothing else is sent. No text other than a feedback message you write, no keystrokes, no list of the apps you use, no analytics and no crash reports.</p>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LangHUD: исправляет текст не в той раскладке и называет язык ввода на Mac</title>
-  <meta name="description" content="LangHUD — приложение в строке меню macOS для тех, кто печатает на двух языках. Называет язык клавиатуры и исправляет текст, набранный не в той раскладке. Не кейлогер: всё остаётся на Mac.">
+  <meta name="description" content="LangHUD — приложение в строке меню macOS для тех, кто печатает на двух языках. Называет язык клавиатуры и исправляет текст, набранный не в той раскладке. Не кейлогер: ничего не записывается.">
   <meta name="langhud-languages" content="en,he,ru,ar">
   <link rel="canonical" href="https://langhud.app/ru/">
   <link rel="alternate" hreflang="en" href="https://langhud.app/">
@@ -19,13 +19,13 @@
   <meta property="og:locale:alternate" content="he_IL">
   <meta property="og:locale:alternate" content="ar_AR">
   <meta property="og:title" content="LangHUD: исправляет текст не в той раскладке и называет язык ввода на Mac">
-  <meta property="og:description" content="LangHUD — приложение в строке меню macOS для тех, кто печатает на двух языках. Называет язык клавиатуры и исправляет текст, набранный не в той раскладке. Не кейлогер: всё остаётся на Mac.">
+  <meta property="og:description" content="LangHUD — приложение в строке меню macOS для тех, кто печатает на двух языках. Называет язык клавиатуры и исправляет текст, набранный не в той раскладке. Не кейлогер: ничего не записывается.">
   <meta property="og:url" content="https://langhud.app/ru/">
   <meta property="og:image" content="https://langhud.app/og-image.jpg">
   <meta property="og:image:alt" content="Подсказка LangHUD с надписью English над текстовым полем">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="LangHUD: исправляет текст не в той раскладке и называет язык ввода на Mac">
-  <meta name="twitter:description" content="LangHUD — приложение в строке меню macOS для тех, кто печатает на двух языках. Называет язык клавиатуры и исправляет текст, набранный не в той раскладке. Не кейлогер: всё остаётся на Mac.">
+  <meta name="twitter:description" content="LangHUD — приложение в строке меню macOS для тех, кто печатает на двух языках. Называет язык клавиатуры и исправляет текст, набранный не в той раскладке. Не кейлогер: ничего не записывается.">
   <meta name="twitter:image" content="https://langhud.app/og-image.jpg">
   <meta name="twitter:image:alt" content="Подсказка LangHUD с надписью English над текстовым полем">
   <meta name="color-scheme" content="light dark">
@@ -43,7 +43,7 @@
     "url": "https://langhud.app/ru/",
     "downloadUrl": "https://github.com/onemenny/LangHUD-site/releases/latest/download/LangHUD.dmg",
     "image": "https://langhud.app/og-image.jpg",
-    "softwareVersion": "0.1.0"
+    "softwareVersion": "0.2.0"
   }
   </script>
   <script src="../site.js"></script>
@@ -90,7 +90,7 @@
           <a class="button button-primary" href="#download">Скачать для Mac</a>
           <a class="button button-secondary" href="#how-it-works">Как это работает</a>
         </div>
-        <p class="hero-meta">Версия <!-- version:start -->0.1.0<!-- version:end --> &middot; macOS 13 или новее &middot; Apple silicon или Intel</p>
+        <p class="hero-meta">Версия <!-- version:start -->0.2.0<!-- version:end --> &middot; macOS 13 или новее &middot; Apple silicon или Intel</p>
       </div>
     </section>
 
@@ -133,7 +133,7 @@
         <div class="feature-pair">
           <article class="card feature-highlight">
             <h3>Исправление текста, набранного не в той раскладке</h3>
-            <p>Напечатали целое предложение ивритскими буквами, хотя хотели по-английски? Выделите его и нажмите сочетание клавиш. LangHUD переведёт выделенный текст в другую раскладку и переключит клавиатуру, чтобы вы могли печатать дальше. Нажмите ещё раз, чтобы отменить перевод.</p>
+            <p>Напечатали целое предложение ивритскими буквами, хотя хотели по-английски? Выделите его и нажмите сочетание клавиш. LangHUD переведёт выделенный текст в другую раскладку и переключит клавиатуру, чтобы вы могли печатать дальше. Нажмите ещё раз, чтобы отменить перевод. Ничего не выделили? Переведётся только что напечатанная строка.</p>
             <p class="feature-example" dir="ltr"><span lang="he" dir="rtl">יקךךם &#39;םרךג</span> <span aria-hidden="true">&rarr;</span> <span lang="en">hello world</span></p>
           </article>
           <article class="card feature-highlight">
@@ -153,7 +153,7 @@
           </article>
           <article class="card">
             <h3>Конфиденциально, и это не кейлогер</h3>
-            <p>Текст читается только на вашем Mac и никуда не отправляется. Ваш ввод, ваш текст и приложения, которыми вы пользуетесь, не отправляются, а LangHUD не просит разрешения на мониторинг ввода (Input Monitoring).</p>
+            <p>Текст и клавиши читаются только на вашем Mac. Ничего из набранного не записывается и никуда не отправляется, приложения, которыми вы пользуетесь, не отправляются, а LangHUD не просит разрешения на мониторинг ввода (Input Monitoring).</p>
           </article>
         </div>
       </div>
@@ -166,7 +166,7 @@
         <div class="faq-list">
           <details>
             <summary><h3>LangHUD — это кейлогер?</h3></summary>
-            <p>Нет. LangHUD не записывает, что вы печатаете, и не просит разрешения на мониторинг ввода, которое нужно кейлогерам. Он смотрит на поле, в котором вы работаете, только чтобы заметить, что вы начали печатать, и чтобы перевести выделенный текст, и ничего не хранит.</p>
+            <p>Нет. LangHUD не записывает, что вы печатаете, и не просит разрешения на мониторинг ввода (Input Monitoring), которое нужно кейлогерам. Он смотрит на поле, в котором вы работаете, чтобы заметить, что вы начали печатать, и чтобы перевести выделенный текст (а если ничего не выделено — только что напечатанную строку), а пока включено автоисправление — и на клавиши слова, которое вы печатаете, и нескольких слов перед ним. Ничего не хранится: эти клавиши и слова, замененные исправлением, есть только в памяти, недолго (не больше минуты), и никогда не записываются на диск, в журнал и никуда не отправляются (а слово, исправление которого вы отменили, — чтобы не исправлять его снова). Единственное, что хранится на диске, — список «никогда не исправлять» на вашем Mac.</p>
           </details>
           <details>
             <summary><h3>Мой текст покидает Mac?</h3></summary>
@@ -178,7 +178,7 @@
           </details>
           <details>
             <summary><h3>Как исправить текст, набранный не на том языке?</h3></summary>
-            <p>Выделите текст и нажмите сочетание клавиш, указанное в настройках LangHUD. Выделенное переводится в другую раскладку, и клавиатура переключается. Если ничего не выделено, ничего не меняется.</p>
+            <p>Выделите текст и нажмите сочетание клавиш, указанное в настройках LangHUD. Выделенное переводится в другую раскладку, и клавиатура переключается. Если ничего не выделено, переводится строка, которую вы только что напечатали.</p>
           </details>
           <details>
             <summary><h3>Можно выключить голосовую подсказку?</h3></summary>
@@ -217,7 +217,7 @@
     <section class="section section-alt reveal" id="download">
       <div class="container">
         <p class="eyebrow">Скачать</p>
-        <h2>Скачать LangHUD <!-- version:start -->0.1.0<!-- version:end --></h2>
+        <h2>Скачать LangHUD <!-- version:start -->0.2.0<!-- version:end --></h2>
         <p class="section-lead">Один образ диска для Mac с Apple silicon или Intel и macOS 13 Ventura или новее. LangHUD скоро появится и в Mac App Store.</p>
         <div class="button-row">
           <a class="button button-primary" href="https://github.com/onemenny/LangHUD-site/releases/latest/download/LangHUD.dmg">Скачать LangHUD.dmg</a>
@@ -261,18 +261,22 @@
         <div class="release-list" lang="en" dir="ltr">
         <!-- changelog-latest:start -->
     <section class="release">
-      <h3>Version 0.1.0</h3>
-      <p class="release-date"><time datetime="2026-11-18">2026-11-18</time></p>
+      <h3>Version 0.2.0</h3>
+      <p class="release-date"><time datetime="2026-11-26">2026-11-26</time></p>
       <h4>Added</h4>
       <ul>
-        <li>A small on-screen reminder shows which keyboard language you are typing in when you start typing in a text field, switch apps, or come back to typing after a pause.</li>
-        <li>An optional spoken cue says the language name, for example "English" or "Hebrew".</li>
-        <li>The menu bar icon shows the current keyboard language.</li>
-        <li>Fix the last typed text: select text that was typed in the wrong keyboard language and press the hot key to convert it to the other language and switch the keyboard to match.</li>
-        <li>Settings for the reminder, the spoken cue, the hot key and starting at login.</li>
-        <li>A Known Limitations window that lists apps where LangHUD cannot see typing.</li>
-        <li>A 14-day free trial from the first launch. After it the spoken cue and text correction need a license; the on-screen reminder stays free. Reinstalling the app does not restart the trial.</li>
-        <li>LangHUD can now check for updates and offer them (never forced). A new version shows in the menu bar icon's menu; "Check for Updates…" is there too.</li>
+        <li>Auto-correct as you type: an optional setting that fixes words typed in the wrong keyboard language as you go.</li>
+        <li>Convert text without selecting it first: with nothing selected, the shortcut converts the line you are on.</li>
+        <li>A new way to trigger a conversion: double-tap a modifier key.</li>
+        <li>LangHUD stays quiet while Do Not Disturb or a Focus is on.</li>
+        <li>Set a keyboard layout per app.</li>
+        <li>More reminder looks, per language.</li>
+      </ul>
+      <h4>Changed</h4>
+      <ul>
+        <li>Settings take effect immediately.</li>
+        <li>A tidier menu-bar menu and Settings window.</li>
+        <li>Smaller fixes and polish throughout.</li>
       </ul>
     </section>
         <!-- changelog-latest:end -->

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LangHUD: fix wrong-keyboard text and hear your typing language on Mac</title>
-  <meta name="description" content="LangHUD is a private macOS menu bar app for bilingual typing. It speaks the keyboard language as you type and fixes text typed in the wrong layout. Not a keylogger: nothing leaves your Mac.">
+  <meta name="description" content="LangHUD is a private macOS menu bar app for bilingual typing. It speaks the keyboard language as you type and fixes text typed in the wrong layout. Not a keylogger: nothing typed is recorded or sent.">
   <meta name="langhud-languages" content="en,he,ru,ar">
   <link rel="canonical" href="https://langhud.app/">
   <link rel="alternate" hreflang="en" href="https://langhud.app/">
@@ -19,13 +19,13 @@
   <meta property="og:locale:alternate" content="ru_RU">
   <meta property="og:locale:alternate" content="ar_AR">
   <meta property="og:title" content="LangHUD: fix wrong-keyboard text and hear your typing language on Mac">
-  <meta property="og:description" content="LangHUD is a private macOS menu bar app for bilingual typing. It speaks the keyboard language as you type and fixes text typed in the wrong layout. Not a keylogger: nothing leaves your Mac.">
+  <meta property="og:description" content="LangHUD is a private macOS menu bar app for bilingual typing. It speaks the keyboard language as you type and fixes text typed in the wrong layout. Not a keylogger: nothing typed is recorded or sent.">
   <meta property="og:url" content="https://langhud.app/">
   <meta property="og:image" content="https://langhud.app/og-image.jpg">
   <meta property="og:image:alt" content="The LangHUD reminder showing English above a text field">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="LangHUD: fix wrong-keyboard text and hear your typing language on Mac">
-  <meta name="twitter:description" content="LangHUD is a private macOS menu bar app for bilingual typing. It speaks the keyboard language as you type and fixes text typed in the wrong layout. Not a keylogger: nothing leaves your Mac.">
+  <meta name="twitter:description" content="LangHUD is a private macOS menu bar app for bilingual typing. It speaks the keyboard language as you type and fixes text typed in the wrong layout. Not a keylogger: nothing typed is recorded or sent.">
   <meta name="twitter:image" content="https://langhud.app/og-image.jpg">
   <meta name="twitter:image:alt" content="The LangHUD reminder showing English above a text field">
   <meta name="color-scheme" content="light dark">
@@ -43,7 +43,7 @@
     "url": "https://langhud.app/",
     "downloadUrl": "https://github.com/onemenny/LangHUD-site/releases/latest/download/LangHUD.dmg",
     "image": "https://langhud.app/og-image.jpg",
-    "softwareVersion": "0.1.0"
+    "softwareVersion": "0.2.0"
   }
   </script>
   <script src="site.js"></script>
@@ -90,7 +90,7 @@
           <a class="button button-primary" href="#download">Download for Mac</a>
           <a class="button button-secondary" href="#how-it-works">See how it works</a>
         </div>
-        <p class="hero-meta">Version <!-- version:start -->0.1.0<!-- version:end --> &middot; macOS 13 or later &middot; Apple silicon or Intel</p>
+        <p class="hero-meta">Version <!-- version:start -->0.2.0<!-- version:end --> &middot; macOS 13 or later &middot; Apple silicon or Intel</p>
       </div>
     </section>
 
@@ -133,7 +133,7 @@
         <div class="feature-pair">
           <article class="card feature-highlight">
             <h3>Fix text typed in the wrong layout</h3>
-            <p>Typed a whole sentence in Hebrew letters when you meant English? Select it and press the hot key. LangHUD converts the selected text to the other keyboard layout and switches your keyboard, so you can keep typing. Press again to convert it back.</p>
+            <p>Typed a whole sentence in Hebrew letters when you meant English? Select it and press the hot key. LangHUD converts the selected text to the other keyboard layout and switches your keyboard, so you can keep typing. Press again to convert it back. Nothing selected? It converts the line you just typed.</p>
             <p class="feature-example" dir="ltr"><span lang="he" dir="rtl">יקךךם &#39;םרךג</span> <span aria-hidden="true">&rarr;</span> <span lang="en">hello world</span></p>
           </article>
           <article class="card feature-highlight">
@@ -153,7 +153,7 @@
           </article>
           <article class="card">
             <h3>Private, and not a keylogger</h3>
-            <p>Text is read on your Mac only and never sent anywhere. Your typing, your text and the apps you use are never sent, and LangHUD does not ask for Input Monitoring.</p>
+            <p>Text and keys are read on your Mac only. Nothing you type is recorded or sent anywhere, the apps you use are never sent, and LangHUD does not ask for Input Monitoring.</p>
           </article>
         </div>
       </div>
@@ -166,7 +166,7 @@
         <div class="faq-list">
           <details>
             <summary><h3>Is LangHUD a keylogger?</h3></summary>
-            <p>No. LangHUD does not record what you type and does not ask for the Input Monitoring permission that keyloggers need. It looks at the text field you are working in only to notice that you started typing and to convert text you select, and keeps nothing.</p>
+            <p>No. LangHUD does not record what you type and does not ask for the Input Monitoring permission that keyloggers need. It looks at the text field you are working in to notice that you started typing and to convert text you select (or, with nothing selected, the line you just typed), and, while auto-correct is on, at the keys of the word you are typing and the few words before it. Nothing is stored: those keys, and the words a fix replaced, live in memory only, briefly (at most a minute), and are never written to disk, logged or sent (and a word you undo, so it is not fixed again). The one thing on disk is the never-fix list on your Mac.</p>
           </details>
           <details>
             <summary><h3>Does my text leave my Mac?</h3></summary>
@@ -178,7 +178,7 @@
           </details>
           <details>
             <summary><h3>How do I fix text typed in the wrong language?</h3></summary>
-            <p>Select the text, then press the hot key shown in LangHUD&#39;s Settings. The selection is converted to your other keyboard layout and the keyboard switches to match. Nothing selected means nothing changes.</p>
+            <p>Select the text, then press the hot key shown in LangHUD&#39;s Settings. The selection is converted to your other keyboard layout and the keyboard switches to match. With nothing selected, it converts the line you just typed.</p>
           </details>
           <details>
             <summary><h3>Can I turn the spoken cue off?</h3></summary>
@@ -217,7 +217,7 @@
     <section class="section section-alt reveal" id="download">
       <div class="container">
         <p class="eyebrow">Download</p>
-        <h2>Get LangHUD <!-- version:start -->0.1.0<!-- version:end --></h2>
+        <h2>Get LangHUD <!-- version:start -->0.2.0<!-- version:end --></h2>
         <p class="section-lead">One disk image for Macs with Apple silicon or Intel, running macOS 13 Ventura or later. LangHUD is also coming to the Mac App Store.</p>
         <div class="button-row">
           <a class="button button-primary" href="https://github.com/onemenny/LangHUD-site/releases/latest/download/LangHUD.dmg">Download LangHUD.dmg</a>
@@ -261,18 +261,22 @@
         <div class="release-list" lang="en" dir="ltr">
         <!-- changelog-latest:start -->
     <section class="release">
-      <h3>Version 0.1.0</h3>
-      <p class="release-date"><time datetime="2026-11-18">2026-11-18</time></p>
+      <h3>Version 0.2.0</h3>
+      <p class="release-date"><time datetime="2026-11-26">2026-11-26</time></p>
       <h4>Added</h4>
       <ul>
-        <li>A small on-screen reminder shows which keyboard language you are typing in when you start typing in a text field, switch apps, or come back to typing after a pause.</li>
-        <li>An optional spoken cue says the language name, for example "English" or "Hebrew".</li>
-        <li>The menu bar icon shows the current keyboard language.</li>
-        <li>Fix the last typed text: select text that was typed in the wrong keyboard language and press the hot key to convert it to the other language and switch the keyboard to match.</li>
-        <li>Settings for the reminder, the spoken cue, the hot key and starting at login.</li>
-        <li>A Known Limitations window that lists apps where LangHUD cannot see typing.</li>
-        <li>A 14-day free trial from the first launch. After it the spoken cue and text correction need a license; the on-screen reminder stays free. Reinstalling the app does not restart the trial.</li>
-        <li>LangHUD can now check for updates and offer them (never forced). A new version shows in the menu bar icon's menu; "Check for Updates…" is there too.</li>
+        <li>Auto-correct as you type: an optional setting that fixes words typed in the wrong keyboard language as you go.</li>
+        <li>Convert text without selecting it first: with nothing selected, the shortcut converts the line you are on.</li>
+        <li>A new way to trigger a conversion: double-tap a modifier key.</li>
+        <li>LangHUD stays quiet while Do Not Disturb or a Focus is on.</li>
+        <li>Set a keyboard layout per app.</li>
+        <li>More reminder looks, per language.</li>
+      </ul>
+      <h4>Changed</h4>
+      <ul>
+        <li>Settings take effect immediately.</li>
+        <li>A tidier menu-bar menu and Settings window.</li>
+        <li>Smaller fixes and polish throughout.</li>
       </ul>
     </section>
         <!-- changelog-latest:end -->

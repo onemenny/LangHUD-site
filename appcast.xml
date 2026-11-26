@@ -5,6 +5,32 @@
     <description>LangHUD updates</description>
     <language>en</language>
     <item>
+      <title>LangHUD 0.2.0</title>
+      <pubDate>Thu, 26 Nov 2026 07:37:33 +0000</pubDate>
+      <sparkle:version>485</sparkle:version>
+      <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description sparkle:format="markdown"><![CDATA[
+### Added
+
+- Auto-correct as you type: an optional setting that fixes words typed in the wrong keyboard
+  language as you go.
+- Convert text without selecting it first: with nothing selected, the shortcut converts the line you
+  are on.
+- A new way to trigger a conversion: double-tap a modifier key.
+- LangHUD stays quiet while Do Not Disturb or a Focus is on.
+- Set a keyboard layout per app.
+- More reminder looks, per language.
+
+### Changed
+
+- Settings take effect immediately.
+- A tidier menu-bar menu and Settings window.
+- Smaller fixes and polish throughout.
+]]></description>
+      <enclosure url="https://github.com/onemenny/LangHUD-site/releases/download/v0.2.0/LangHUD.dmg" length="5367996" type="application/octet-stream" sparkle:edSignature="jsBFw/86FcAGkogJU5inhS3Hps4NAO2oWr8cWTzRvNI8NuKTriMvJdt7rTkehDmtwHxj47V02vBbZrsEZtGxDw=="/>
+    </item>
+    <item>
       <title>LangHUD 0.1.0</title>
       <pubDate>Wed, 18 Nov 2026 10:23:53 +0000</pubDate>
       <sparkle:version>324</sparkle:version>
